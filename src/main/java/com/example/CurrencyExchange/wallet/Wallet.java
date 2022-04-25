@@ -39,18 +39,6 @@ public class Wallet {
                 '}';
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Account getOwner() {
-        return owner;
-    }
-
     public void setOwner(Account owner) {
         this.owner = owner;
     }
@@ -67,7 +55,4 @@ public class Wallet {
         return currencyUnit;
     }
 
-    public void setCurrencyUnit(CurrencyUnit currencyUnit) {
-        this.currencyUnit = currencyUnit;
-    }
 }

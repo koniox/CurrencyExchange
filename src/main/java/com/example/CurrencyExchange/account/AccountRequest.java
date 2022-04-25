@@ -1,5 +1,6 @@
 package com.example.CurrencyExchange.account;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.validation.constraints.Min;
@@ -8,6 +9,7 @@ import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 @Data
+@AllArgsConstructor
 public class AccountRequest {
     @NotBlank(message = "First name can't be empty")
     private String firstName;
