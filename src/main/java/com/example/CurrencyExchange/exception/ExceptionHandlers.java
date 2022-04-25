@@ -28,7 +28,7 @@ public class ExceptionHandlers {
 
     @ExceptionHandler(AccountNotFoundException.class)
     public ResponseEntity<?> handleAccountNotFoundExceptions(AccountNotFoundException ex){
-        return new ResponseEntity<>(ex.getMessage(),HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(ex.getMessage(),HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(InsufficientBalanceException.class)
